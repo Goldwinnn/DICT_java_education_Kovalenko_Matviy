@@ -38,3 +38,21 @@ public class ChatBot {
         }
         System.out.println("Completed!");
 
+
+        // 5th stage
+        System.out.println("Let's test your astronomy knowledge.");
+        System.out.println("What color is the sun?");
+        System.out.println("1. Red\n2. Yellow\n3. Orange\n4. White");
+        int answer = 0;
+        while (answer != 4) {
+            answer = Integer.parseInt(scanner.nextLine());
+            if (answer > 4 || answer < 1) {
+                System.out.println("Wrong, try again.");
+            } else if (answer != 4) {
+                System.out.println("Wrong, try again.");
+            } else {
+                System.out.println("Correct!\nGoodbye, have a nice day!");
+            }
+        }
+    }
+}
